@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slice Revealer | Demo 3 | Codrops</title>
+	<meta name="description" content="A slice reveal effect that shows animated slices between image transitions" />
+	<meta name="keywords" content="reveal, slices, effect, animation, css, web development, web design" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/uncover.css" />
+	<link rel="stylesheet" type="text/css" href="css/fancyHover.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+	<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+</head>
+
+<body class="demo-3 loading">
+	<script src='https://kit.fontawesome.com/944eb371a4.js'></script>
+
+
+	<main>
+		<div style="display: flex; justify-content: flex-end; margin-top: 20px; margin-right: 20px;" >
+			<z  href="#" onclick="window.scrollTo({top: 10000,left: 100,behavior: 'smooth' });">
+				<span>Contact&nbsp;&nbsp;Me</span>
+				<div class="liquid"></div>
+			</z>
+		</div>
+		<div class="content content--fixed">
+			<header class="codrops-header">
+				<div class="codrops-links">
+					<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/OutdoorsTemplate/"
+						title="Previous Demo">
+						<svg class="icon icon--arrow">
+							<use xlink:href="#icon-arrow"></use>
+						</svg>
+					</a>
+					<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=33895"
+						title="Back to the article">
+						<svg class="icon icon--drop">
+							<use xlink:href="#icon-drop"></use>
+						</svg>
+					</a>
+				</div>
+
+
+			</header>
+
+		</div>
+		<div class="content grid">
+			<div class="grid__item">
+				<div class="scroll-img" style="background-image: url(img/19.jpg);"></div>
+				<div class="grid__item-titlewrap">
+					<h2 class="grid__item-title">#read</h2>
+					<p class="grid__item-description">Find me tomorrow or never</p>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="scroll-img" style="background-image: url(img/12.jpg);"></div>
+				<div class="grid__item-titlewrap">
+					<h2 class="grid__item-title">#find</h2>
+					<p class="grid__item-description">Never end it like that</p>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="scroll-img" style="background-image: url(img/13.jpg);"></div>
+				<div class="grid__item-titlewrap">
+					<h2 class="grid__item-title">#make</h2>
+					<p class="grid__item-description">Why make noise like that?</p>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="scroll-img" style="background-image: url(img/14.jpg);"></div>
+				<div class="grid__item-titlewrap">
+					<h2 class="grid__item-title">#love</h2>
+					<p class="grid__item-description">No point in running</p>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="scroll-img" style="background-image: url(img/15.jpg);"></div>
+				<div class="grid__item-titlewrap">
+					<h2 class="grid__item-title">#walk</h2>
+					<p class="grid__item-description">When you get there</p>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="scroll-img" style="background-image: url(img/16.jpg);"></div>
+				<div class="grid__item-titlewrap">
+					<h2 class="grid__item-title">#less</h2>
+					<p class="grid__item-description">Timeless manners count</p>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="scroll-img" style="background-image: url(img/17.jpg);"></div>
+				<div class="grid__item-titlewrap">
+					<h2 class="grid__item-title">#only</h2>
+					<p class="grid__item-description">Together we can sit</p>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="scroll-img" style="background-image: url(img/18.jpg);"></div>
+				<div class="grid__item-titlewrap">
+					<h2 class="grid__item-title">#need</h2>
+					<p class="grid__item-description">The new kid on the block</p>
+				</div>
+			</div>
+			<div class="grid__item">
+				<div class="scroll-img" style="background-image: url(img/11.jpg);"></div>
+				<div class="grid__item-titlewrap">
+					<h2 class="grid__item-title">#feed</h2>
+					<p class="grid__item-description">The new kid on the block</p>
+				</div>
+			</div>
+		</div>
+		<!-- another -->
+
+
+		<div id="text">
+			<!-- <div class="line">
+					<p class="word">A</p>
+					<p class="word">Person</p>
+				</div>
+	
+				<div class="line">
+					<p class="word">YouTube</p>
+					<p class="word">&</p>
+				</div>
+	
+				<div class="line">
+					<p class="word">CodePendence</p>
+				</div> -->
+
+			<div class="line">
+				<a id="channel-link" href="https://youtube.com/@hyperplexed" target="_blank"
+					class="word fancy">Palat&nbsp;&nbsp; &nbsp;Tuntaopas
+
+				</a>
+			</div>
+		</div>
+		<div id="text">
+
+			<div class="line">
+				<a id="channel-link2" href="https://youtube.com/@hyperplexed" target="_blank"
+					class="word fancy">frontend&nbsp;&nbsp;&&nbsp;&nbsp;design
+				</a>
+			</div>
+		</div>
+		<div id="text">
+
+
+			<div class="line">
+				<a id="channel-link3" href="https://youtube.com/@hyperplexed" target="_blank"
+					class="word fancy">0123456789
+				</a>
+			</div>
+			<!-- <div class="line">
+					<a id="channel-link4" href="https://youtube.com/@hyperplexed" target="_blank"
+						class="word fancy">email
+					</a>
+				</div>
+				<div class="line">
+					<a id="channel-link5" href="https://youtube.com/@hyperplexed" target="_blank"
+						class="word fancy">line
+					</a>
+				</div> -->
+		</div>
+		<div style="text-align: center;">
+
+			<div style="text-align: center;">
+				<div id="text" style="display: inline-block;">
+
+					<div class="line">
+						<a id="channel-link4" href="https://youtube.com/@hyperplexed" target="_blank"
+							class="word fancy">email&nbsp;&nbsp;
+						</a>
+					</div>
+				</div>
+				<div id="text" style="display: inline-block;">
+
+					<div class="line">
+						<a id="channel-link5" href="https://youtube.com/@hyperplexed" target="_blank"
+							class="word fancy">line
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- partial -->
+		<script src='https://kit.fontawesome.com/944eb371a4.js'></script>
+		<!-- <script src="./js/fancyHover.js"></script> -->
+
+</body>
+
+</html>
+
+
+
+</main>
+<script src='https://kit.fontawesome.com/944eb371a4.js'></script>
+<script src="js/fancyHover.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/uncover.js"></script>
+<script src="js/demo3.js"></script>
+</body>
+
+</html>
