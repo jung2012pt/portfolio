@@ -33,8 +33,9 @@ const enhance = id => {
   });
 }
 
-enhance("channel-link");
+enhance("channel-link1");
 enhance("channel-link2");
 enhance("channel-link3");
 enhance("channel-link4");
 enhance("channel-link5");
+enhance("channel-link6");
